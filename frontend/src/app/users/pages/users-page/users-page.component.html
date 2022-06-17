@@ -1,0 +1,16 @@
+<div class="user-list">
+  <div class="search-input">
+    <app-search-input
+      [descriptionTitle]="'Search user by name:'"
+      (searchTermChanges)="onSearchChanges($event)"
+    ></app-search-input>
+  </div>
+  <div class="table">
+    <app-material-table
+      [columnsWithLabels]="userColumns"
+      [tableData]="userListToDisplay"
+      [enableSelectedItemOutput]="true"
+      (itemWasClick)="onUserSelected($event)"
+    ></app-material-table>
+  </div>
+</div>

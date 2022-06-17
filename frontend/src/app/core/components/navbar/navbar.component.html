@@ -1,0 +1,25 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <div class="nav-logo">
+      <img
+        routerLink="/"
+        alt="logo"
+      />
+    </div>
+
+    <ul class="menu-item">
+      <li
+        *ngFor="let navItem of navigationItems"
+        routerLinkActive="active"
+        [routerLink]="[navItem.path]"
+        [routerLinkActive]="['active-nav-underline']"
+      >
+        {{ navItem.label }}
+      </li>
+    </ul>
+  </div>
+</div>
+<app-sub-navbar
+  *ngIf="subNavigationItems"
+  [subNavigationItems]="subNavigationItems"
+></app-sub-navbar>

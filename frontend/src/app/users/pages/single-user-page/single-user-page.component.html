@@ -1,0 +1,15 @@
+<mat-card *ngIf="user$ | async as user">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ user.lastName }} {{ user.firstName }}</mat-card-title>
+    <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+    <mat-card-subtitle>
+      <span>birthday: {{ user.birthday | date: "dd/MM/yyyy" }}</span>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button class="black-btn" [routerLink]="['/users']" mat-button>
+      BACK
+    </button>
+  </mat-card-actions>
+</mat-card>

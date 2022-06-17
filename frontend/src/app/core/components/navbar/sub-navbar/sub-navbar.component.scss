@@ -1,0 +1,6 @@
+@import "vars";
+@import "../../../../../styles//navbar.scss";
+
+.navbar {
+  @include header(35px, $gray-lighter, $black, 15px, $black);
+}

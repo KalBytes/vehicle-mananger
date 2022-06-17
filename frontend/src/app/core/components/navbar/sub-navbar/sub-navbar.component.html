@@ -1,0 +1,13 @@
+<div class="navbar">
+  <div class="navbar-left">
+    <ul class="menu-item">
+      <li
+        *ngFor="let navigationItem of subNavigationItems"
+        [routerLink]="[navigationItem.path]"
+        [routerLinkActive]="['active-nav-underline']"
+      >
+        {{ navigationItem.label }}
+      </li>
+    </ul>
+  </div>
+</div>

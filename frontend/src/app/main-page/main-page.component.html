@@ -1,0 +1,17 @@
+<div class="main-page">
+  <section class="entry-banner">
+    <img src="../../assets/main-page-teaser.jpeg" alt="" />
+  </section>
+
+  <section class="title">
+    <h1>Welcome to admin panel!</h1>
+  </section>
+
+  <section class="cards">
+    <app-card
+      *ngFor="let card of cards"
+      [cardData]="card"
+      [routerLink]="card.path"
+    ></app-card>
+  </section>
+</div>

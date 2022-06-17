@@ -1,0 +1,14 @@
+@import "vars";
+@import "../../../../styles/navbar.scss";
+
+.navbar {
+  @include header(65px, $black, $gray-lighter, 17px, $gray-lighter);
+}
+
+li {
+  position: relative;
+}
+
+img {
+  cursor: pointer;
+}

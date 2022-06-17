@@ -1,0 +1,11 @@
+@import "vars";
+
+mat-card {
+  margin: 50px auto;
+  width: 50%;
+
+  .example-header-image {
+    background-image: url("../../../../assets/no-user.png");
+    background-size: cover;
+  }
+}

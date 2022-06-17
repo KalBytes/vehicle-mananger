@@ -1,0 +1,66 @@
+<mat-card class="form-card">
+  <div class="card-header">
+    <span>Please add new vehicle:</span>
+    <img src="../../../../assets/car_logo_PNG1640.png" alt=" logo" />
+  </div>
+  <form [formGroup]="vehicleForm" (ngSubmit)="onForumSubmit()">
+    <mat-card-content>
+      <!-- Start! licensePlate field -->
+      <mat-form-field appearance="outline">
+        <mat-label>license plate:</mat-label>
+        <input formControlName="licensePlate" matInput />
+      </mat-form-field>
+      <!-- End! licensePlate field -->
+
+      <!-- Start! Vin number field-->
+      <mat-form-field appearance="outline">
+        <mat-label>Vin number:</mat-label>
+        <input formControlName="vin" matInput />
+      </mat-form-field>
+      <!-- End! Vin number -->
+
+      <!-- Start! Model field -->
+      <mat-form-field appearance="outline">
+        <mat-label>Model name:</mat-label>
+        <input formControlName="model" matInput />
+      </mat-form-field>
+      <!-- End! Model -->
+
+      <!-- Start! Active field -->
+      <mat-form-field appearance="outline">
+        <mat-label>Is currently valid?</mat-label>
+        <mat-select formControlName="active">
+          <mat-option [value]="true">Yes</mat-option>
+          <mat-option [value]="false">No</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <!-- End! Active -->
+
+      <!-- Start! Color field -->
+      <mat-form-field appearance="outline">
+        <mat-label>Vehicle Color:</mat-label>
+        <input formControlName="color" matInput />
+      </mat-form-field>
+      <!-- End! licensePlate field -->
+
+      <!-- Start! valid till field -->
+      <mat-form-field appearance="outline">
+        <mat-label>Valid till</mat-label>
+        <input formControlName="validTill" matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <!-- End! valid till field -->
+    </mat-card-content>
+  </form>
+  <mat-card-actions>
+    <button
+      (click)="onForumSubmit()"
+      [disabled]="!vehicleForm.valid"
+      class="black-btn"
+      mat-raised-button
+    >
+      Add
+    </button>
+  </mat-card-actions>
+</mat-card>
