@@ -1,6 +1,8 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
+  "name": "vehicle-manager-frontend",
+  "version": "1.0.0",
+  "author": "Igor Romanovsky",
+  "description": "Vehicle & User manager example app",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

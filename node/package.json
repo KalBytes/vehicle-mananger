@@ -1,9 +1,8 @@
 {
-  "name": "abi-node-backend",
-  "private": true,
-  "version": "0.0.1",
+  "name": "vehicle-manager-frontend",
+  "version": "1.0.0",
+  "author": "Igor Romanovsky",
   "description": "",
-  "license": "MIT",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
