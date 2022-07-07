@@ -2,11 +2,10 @@
 
 
 ## Description
-----
+
 A POC for a basic but powerful CRUD application that allows users to manage vehicles & drivers, by showing all the data using API calls to the server. The app also allows you to perform “live search” for driver data.
 
 ## Key features 
-----
 
 * Complete Fullstack CRUD application based on Javascript & Typescript
 * State management
@@ -14,7 +13,7 @@ A POC for a basic but powerful CRUD application that allows users to manage vehi
 * Custom Validators implementation
 
 ## Stack 
-----
+
 * [Angular 9](https://angular.io/)
 * [Angular material library](https://material.angular.io/)
 * [Akita state management library](https://github.com/salesforce/akita)
